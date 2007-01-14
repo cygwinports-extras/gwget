@@ -1,0 +1,15 @@
+category: Gnome Web
+requires: cygwin GConf2 gdk-pixbuf2 glib2 gnome-vfs2 gtk2-x11 libX11_6 libdbus-glib_1_2 libglade2 libgnome2 libgnomeui2 libintl8 libpopt0 pango wget
+sdesc: "GNOME download manager"
+ldesc: "Gwget it's a download manager for the Gnome Desktop. The main 
+features are:
+
+* Resume: By default, gwget tries to continue any download.
+* Notification: Gwget tries to use the Gnome notification area
+support, if available. You can close the main window and gwget runs in
+the background.
+* Recursivity: Gwget detects when you put a html, php, asp or a web page
+dir in the url to download, and ask you to only download certain files
+(multimedia, only the index, and so on).
+* Drag & Drop: You can d&d a url to the main gwget window or the
+notification area icon to add a new download."

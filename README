@@ -1,0 +1,147 @@
+gwget
+------------------------------------------
+Gwget it's a download manager for the Gnome Desktop. The main features are:
+
+* Resume: By default, gwget tries to continue any download.
+* Notification: Gwget tries to use the Gnome notification area 
+support, if available. You can close the main window and gwget runs in
+the background.
+* Recursivity: Gwget detects when you put a html, php, asp or a web page 
+dir in the url to download, and ask you to only download certain files 
+(multimedia, only the index, and so on).
+* Drag & Drop: You can d&d a url to the main gwget window or the 
+notification area icon to add a new download.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  GConf2-2.16.0-1
+  gdk-pixbuf2-2.10.7-1
+  glib2-2.12.7-1
+  gnome-vfs2-2.16.2-1
+  gtk2-x11-2.10.7-1
+  libX11_6-1.1.1-1
+  libdbus-glib_1_2-0.72-1
+  libglade2-2.6.0-1
+  libgnome2-2.16.0-1
+  libgnomeui2-2.16.1-1
+  libintl8-0.15-1
+  libpopt0-1.10.4-1
+  pango-1.14.9-1
+  wget
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.23-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.8-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.2-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnome.org/projects/gwget/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/gwget/
+
+License:
+  GPL-2
+
+Language:
+  C
+
+-------------------------------------------
+
+Build instructions:
+  unpack gwget-0.98.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gwget-0.98.2-X.cygport all
+
+This will create:
+  /usr/src/gwget-0.98.2-X-src.tar.bz2
+  /usr/src/gwget-0.98.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/gwget.schemas
+  /etc/postinstall/gwget.sh
+  /etc/preremove/gwget.sh
+  /usr/bin/gwget.exe
+  /usr/share/applications/gwget.desktop
+  /usr/share/doc/Cygwin/gwget-0.98.2.README
+  /usr/share/doc/gwget-0.98.2/AUTHORS
+  /usr/share/doc/gwget-0.98.2/COPYING
+  /usr/share/doc/gwget-0.98.2/ChangeLog
+  /usr/share/doc/gwget-0.98.2/INSTALL
+  /usr/share/doc/gwget-0.98.2/NEWS
+  /usr/share/doc/gwget-0.98.2/README
+  /usr/share/doc/gwget-0.98.2/THANKS
+  /usr/share/doc/gwget-0.98.2/TODO
+  /usr/share/gwget/about.glade
+  /usr/share/gwget/downloading.png
+  /usr/share/gwget/gwget-large.png
+  /usr/share/gwget/gwget-off.png
+  /usr/share/gwget/gwget.glade
+  /usr/share/gwget/gwget.png
+  /usr/share/gwget/gwget.xpm
+  /usr/share/gwget/newdownload.glade
+  /usr/share/gwget/newdownload.png
+  /usr/share/gwget/preferences.glade
+  /usr/share/locale/ar/LC_MESSAGES/gwget.mo
+  /usr/share/locale/bg/LC_MESSAGES/gwget.mo
+  /usr/share/locale/ca/LC_MESSAGES/gwget.mo
+  /usr/share/locale/cs/LC_MESSAGES/gwget.mo
+  /usr/share/locale/da/LC_MESSAGES/gwget.mo
+  /usr/share/locale/de/LC_MESSAGES/gwget.mo
+  /usr/share/locale/el/LC_MESSAGES/gwget.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gwget.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gwget.mo
+  /usr/share/locale/es/LC_MESSAGES/gwget.mo
+  /usr/share/locale/eu/LC_MESSAGES/gwget.mo
+  /usr/share/locale/fi/LC_MESSAGES/gwget.mo
+  /usr/share/locale/fr/LC_MESSAGES/gwget.mo
+  /usr/share/locale/hu/LC_MESSAGES/gwget.mo
+  /usr/share/locale/it/LC_MESSAGES/gwget.mo
+  /usr/share/locale/ja/LC_MESSAGES/gwget.mo
+  /usr/share/locale/lt/LC_MESSAGES/gwget.mo
+  /usr/share/locale/mk/LC_MESSAGES/gwget.mo
+  /usr/share/locale/ne/LC_MESSAGES/gwget.mo
+  /usr/share/locale/nl/LC_MESSAGES/gwget.mo
+  /usr/share/locale/pa/LC_MESSAGES/gwget.mo
+  /usr/share/locale/pl/LC_MESSAGES/gwget.mo
+  /usr/share/locale/pt/LC_MESSAGES/gwget.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gwget.mo
+  /usr/share/locale/ro/LC_MESSAGES/gwget.mo
+  /usr/share/locale/ru/LC_MESSAGES/gwget.mo
+  /usr/share/locale/rw/LC_MESSAGES/gwget.mo
+  /usr/share/locale/sk/LC_MESSAGES/gwget.mo
+  /usr/share/locale/sq/LC_MESSAGES/gwget.mo
+  /usr/share/locale/sv/LC_MESSAGES/gwget.mo
+  /usr/share/locale/tr/LC_MESSAGES/gwget.mo
+  /usr/share/locale/uk/LC_MESSAGES/gwget.mo
+  /usr/share/locale/vi/LC_MESSAGES/gwget.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gwget.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gwget.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gwget.mo
+  /usr/share/pixmaps/gwget.png
+
+------------------
+
+Port Notes:
+
+----- version 0.98.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
