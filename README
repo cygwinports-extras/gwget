@@ -13,33 +13,33 @@ dir in the url to download, and ask you to only download certain files
 notification area icon to add a new download.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  GConf2-2.16.1-1
-  gdk-pixbuf2-2.10.12-1
-  glib2-2.12.12-1
-  gnome-vfs2-2.16.2-1
-  gtk2-x11-2.10.12-1
-  libX11_6-1.1.1-1
-  libdbus-glib_1_2-0.73-1
-  libglade2-2.6.0-1
-  libgnome2-2.16.0-1
-  libgnomeui2-2.16.1-1
+  cygwin-1.5.25-11
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gnome-vfs2-2.22.0-1
+  gtk2-x11-2.12.9-1
+  libX11_6-1.1.3-1
+  libdbus-glib_1_2-0.74-1
+  libglade2-2.6.2-1
+  libgnome2-2.22.0-1
+  libgnomeui2-2.22.1-1
   libintl8-0.15-1
-  libpopt0-1.10.4-1
-  pango-1.16.4-1
+  libnotify-0.4.4-1
+  pango-1.20.3-1
   wget
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
-  gawk-3.1.5-4
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  intltool-0.35.5-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -78,7 +78,6 @@ Files included in the binary package:
   /etc/preremove/gwget.sh
   /usr/bin/gwget.exe
   /usr/share/applications/gwget.desktop
-  /usr/share/doc/Cygwin/gwget-0.99.README
   /usr/share/doc/gwget-0.99/AUTHORS
   /usr/share/doc/gwget-0.99/COPYING
   /usr/share/doc/gwget-0.99/ChangeLog
@@ -138,6 +137,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.99-2 -----
+Rebuilt with libnotify support.
 
 ----- version 0.99-1 -----
 Version bump.
