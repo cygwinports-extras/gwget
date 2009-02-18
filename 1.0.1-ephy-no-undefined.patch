@@ -1,0 +1,23 @@
+--- origsrc/gwget-1.0.1/epiphany-extension/Makefile.am	2009-02-15 08:53:18.000000000 -0600
++++ src/gwget-1.0.1/epiphany-extension/Makefile.am	2009-02-18 13:59:48.902875000 -0600
+@@ -21,7 +21,12 @@ libgwgetextension_la_SOURCES =			\
+  	$(top_builddir)/src/gwget-application.h \
+  	$(top_builddir)/src/gwget-application.c  
+ 
+-libgwgetextension_la_LDFLAGS = -module -avoid-version 
++libgwgetextension_la_LDFLAGS = -module -avoid-version -no-undefined -export-symbols $(srcdir)/gwget.def
++
++libgwgetextension_la_LIBADD =	\
++	$(EPIPHANY_DEPENDENCY_LIBS)	\
++	$(GNOME_LIBS)	\
++	$(DBUS_LIBS)
+ 
+ extensionxmldir = $(extensiondir)
+ extensionxml_in_files = gwget.xml.in.in
+--- origsrc/gwget-1.0.1/epiphany-extension/gwget.def	1969-12-31 18:00:00.000000000 -0600
++++ src/gwget-1.0.1/epiphany-extension/gwget.def	2009-02-18 13:59:18.027875000 -0600
+@@ -0,0 +1,4 @@
++IMPORTS
++gwget_data_new = gwget.exe.gwget_data_new
++gwget_data_add_download = gwget.exe.gwget_data_add_download
++gwget_data_start_download = gwget.exe.gwget_data_start_download

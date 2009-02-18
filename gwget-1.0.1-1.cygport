@@ -3,5 +3,7 @@ inherit gnome2
 DESCRIPTION="GNOME download manager"
 HOMEPAGE="http://www.gnome.org/projects/gwget/"
 
+PATCH_URI="1.0.1-schemas-install.patch"
+
 # doesn't seem to work with epiphany-webkit
 CYGCONF_ARGS="--disable-epiphany-extension"
