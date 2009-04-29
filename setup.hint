@@ -1,5 +1,5 @@
 category: Gnome Web
-requires: cygwin GConf2 libdbus-glib_1_2 libgconf2_4 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgnome2_0 libgnomevfs2_0 libgnomeui2_0 libgtk2.0_0 libintl8 libnotify1 libpango1.0_0 wget
+requires: cygwin GConf2 libdbus-glib_1_2 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgnome2_0 libgnomevfs2_0 libgnomeui2_0 libgtk2.0_0 libintl8 libnotify1 libpango1.0_0 wget
 sdesc: "GNOME download manager"
 ldesc: "Gwget it's a download manager for the Gnome Desktop. The main 
 features are:
