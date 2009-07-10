@@ -13,20 +13,19 @@ dir in the url to download, and ask you to only download certain files
 notification area icon to add a new download.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-50
   libdbus-glib_1_2-0.80-10
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.3-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.1-1
+  libglib2.0_0-2.20.4-1
   libgnome2_0-2.26.0-1
   libgnomeui2_0-2.24.1-1
-  libgnomevfs2_0-2.26.0-1
-  libgtk2.0_0-2.16.1-1
-  libintl8-0.17-10
+  libgtk2.0_0-2.16.3-1
+  libintl8-0.17-11
   libnotify1-0.4.5-10
-  libpango1.0_0-1.24.1-1
+  libpango1.0_0-1.24.3-1
   wget
 
 Build requirements:
@@ -59,15 +58,15 @@ Language:
 -------------------------------------------
 
 Build instructions:
-  unpack gwget-1.0.1-X-src.tar.bz2
+  unpack gwget-1.0.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gwget-1.0.1-X.cygport all
+  cygport ./gwget-1.0.2-X.cygport all
 
 This will create:
-  /usr/src/gwget-1.0.1-X-src.tar.bz2
-  /usr/src/gwget-1.0.1-X.tar.bz2
+  /usr/src/gwget-1.0.2-X-src.tar.bz2
+  /usr/src/gwget-1.0.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -141,6 +140,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.2-1 -----
+Version bump.
 
 ----- version 1.0.1-10 -----
 Initial release for Cygwin 1.7.
