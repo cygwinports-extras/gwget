@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="GNOME download manager"
+HOMEPAGE="http://www.gnome.org/projects/gwget/"
+
+PATCH_URI="mirror://portage/net-misc/${PN}/files/${P}-libnotify-0.7.patch"
+
+# minimum required for libtool
+WANT_AUTOMAKE=1.9
+# no support for epiphany 3.0
+CYGCONF_ARGS="--disable-epiphany-extension"
